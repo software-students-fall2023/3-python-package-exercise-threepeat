@@ -1,1 +1,22 @@
+import json
+import random
+import os
 
+def activity(indoor=True, time="evening"):
+    script_dir = os.path.dirname(os.path.abspath(__file__))
+    json_path = os.path.join(script_dir, '../data/activities.json')
+    with open(json_path, "r") as file:
+        activities = json.load(file)
+
+    filtered_activities = []
+    for activity in activities:
+        indoor_match = indoor == activity["indoor"]
+        time_match = time.lower() == activity["time"].lower()      
+        if indoor_match and time_match:
+            filtered_activities.append(activity)
+
+    if filtered_activities:
+        recommended_activity = random.choice(filtered_activities)
+    else:
+        recommended_activity = "Stay home and relax."
+    return recommended_activity
