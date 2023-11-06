@@ -14,6 +14,12 @@ def main():
         parser.add_argument("--time", default="evening")
         activity_args = parser.parse_args()
         result = activity(indoor=activity_args.indoor, time=activity_args.time)
+    """elif args.function == "food":
+    
+    elif args.function == "dessert":
+    
+    elif args.function == "pickupline"""""
+
 
     print(result)
 
