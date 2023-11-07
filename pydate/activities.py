@@ -25,4 +25,3 @@ def activity(indoor=True, time="evening"):
     else:
         recommended_activity = "Stay home and relax."
     return recommended_activity
-
