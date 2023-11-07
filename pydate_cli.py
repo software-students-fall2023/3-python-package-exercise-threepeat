@@ -7,13 +7,15 @@ from pydate import activity
 def main():
     parser = argparse.ArgumentParser()
     parser.add_argument("function", choices=["activity", "food", "dessert", "pickupline"])
+
+    parser.add_argument("--indoor", choices=["True", "False"])
+    parser.add_argument("--time", type=str, default="evening")
+
     args = parser.parse_args()
 
     if args.function == "activity":
-        parser.add_argument("--indoor", type=bool, default=True)
-        parser.add_argument("--time", default="evening")
-        activity_args = parser.parse_args()
-        result = activity(indoor=activity_args.indoor, time=activity_args.time)
+        indoor = args.indoor == "True"
+        result = activity(indoor=indoor, time=args.time)
     """elif args.function == "food":
     
     elif args.function == "dessert":
