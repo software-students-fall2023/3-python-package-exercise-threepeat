@@ -2,7 +2,7 @@ import argparse
 from pydate import activity
 from pydate import dessert
 from pydate import food
-from pydate import pickupline
+#from pydate import pickupline
 
 def main():
     parser = argparse.ArgumentParser()
