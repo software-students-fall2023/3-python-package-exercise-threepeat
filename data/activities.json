@@ -1,6 +1,6 @@
 [
     {
-        "activity": "Hiking",
+        "name": "Hiking",
         "indoor": false,
         "time": "morning"
     },
@@ -12,11 +12,6 @@
     {
         "activity": "sushi dinner",
         "indoor": true,
-        "time": "evening"
-    },
-    {
-        "activity": "Star-gazing",
-        "indoor": false,
         "time": "evening"
     }
 ]
