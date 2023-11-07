@@ -1,7 +1,7 @@
 import argparse
 from pydate import activity
-from pydate import dessert
 from pydate import food
+from pydate import dessert
 #from pydate import pickupline
 
 def main():
@@ -24,10 +24,10 @@ def main():
         indoor = args.indoor == "True"
         result = activity(indoor=indoor, time=args.time)
     elif args.function == "dessert":
-        result = dessert(type=args.type, price=args.price)
+        result = dessert(category=args.type, price=args.price)
     elif args.function == "food":
         result = food(cuisine=args.cuisine, price_range=args.price_range, type=args.type)
-
+    
     print(result)
 
 if __name__ == "__main__":
