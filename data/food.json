@@ -15,17 +15,17 @@
         "name": "Marseille-Style Shrimp Stew",
         "cuisine": "French",
         "price_range": "medium",
-        "type": "Dinner"
+        "type": "dinner"
     },
     {
         "name": "Short Rib Bourguignon",
         "cuisine": "French",
-        "price_range": "Medium",
+        "price_range": "medium",
         "type": "dinner"
     },
     {
         "name": "Lobster Thermidor",
-        "cuisine": "french",
+        "cuisine": "French",
         "price_range": "medium",
         "type": "dinner"
     },

@@ -22,6 +22,7 @@ def food(cuisine="French", price_range="medium", type="dinner"):
 
     if filtered_foods:
         recommended_food = random.choice(filtered_foods)
+        recommended_food=f"Recipe Name: {recommended_food['name']}\nCuisine: {recommended_food['cuisine']}\nPrice Range: {recommended_food['price_range']}\nType: {recommended_food['type']}"
     else:
         recommended_food = "No food meets your requirements. Try again."
     return recommended_food
