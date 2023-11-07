@@ -1,9 +1,8 @@
 import argparse
 from pydate import activity
 from pydate import dessert
-#from pydate import food
-
-#from pydate import pickupline
+from pydate import food
+from pydate import pickupline
 
 def main():
     parser = argparse.ArgumentParser()
@@ -23,13 +22,6 @@ def main():
 
     elif args.function == "dessert":
         result = dessert(type=args.type, price=args.price)
-
-    """elif args.function == "food":
-    
-    
-
-    
-    elif args.function == "pickupline"""""
 
 
     print(result)
