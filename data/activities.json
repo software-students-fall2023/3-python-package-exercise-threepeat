@@ -1,0 +1,22 @@
+[
+    {
+        "activity": "Hiking",
+        "indoor": false,
+        "time": "morning"
+    },
+    {
+        "activity": "pizza dinner",
+        "indoor": true,
+        "time": "evening"
+    },
+    {
+        "activity": "sushi dinner",
+        "indoor": true,
+        "time": "evening"
+    },
+    {
+        "activity": "Star-gazing",
+        "indoor": false,
+        "time": "evening"
+    }
+]
