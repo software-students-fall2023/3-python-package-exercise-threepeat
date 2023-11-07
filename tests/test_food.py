@@ -29,10 +29,10 @@ def test_matching_foods_case_insensitive():
 
 def test_food_with_mock_data():
     mock_data = [
-        {"name": "Fries", "cuisine": "American", "price_range": "low", "type": "lunch"},
-        {"name": "Burger", "cuisine": "American", "price_range": "low", "type": "breakfast"},
-        {"name": "Hot Pot", "cuisine": "Chinese", "price_range": "medium", "type": "lunch"},
-        {"name": "Pizza", "cuisine": "Italian", "price_range": "low", "type": "dinner"},
+        {"name": "Fries", "cuisine": "American", "price_range": "low", "meal": "lunch"},
+        {"name": "Burger", "cuisine": "American", "price_range": "low", "meal": "breakfast"},
+        {"name": "Hot Pot", "cuisine": "Chinese", "price_range": "medium", "meal": "lunch"},
+        {"name": "Pizza", "cuisine": "Italian", "price_range": "low", "meal": "dinner"},
     ]
 
     with patch('builtins.open', mock_open(read_data=json.dumps(mock_data))):
