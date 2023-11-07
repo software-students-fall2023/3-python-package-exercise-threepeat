@@ -25,7 +25,9 @@ def test_activity_with_mocked_data():
     
     with mock.patch('pydate.activities.json.load') as mock_json_load:
         mock_json_load.return_value = [
-            {"activity": "Hiking", "indoor": False, "time": "morning"},
+            {"activity": "Soccer", "indoor": True, "time": "morning"},
+            {"activity": "Basketball", "indoor": False, "time": "evening"},
+            {"activity": "Table Tennis", "indoor": False, "time": "morning"},
             {"activity": "Reading", "indoor": True, "time": "evening"},
         ]
         result = activity(indoor=True, time="evening")
