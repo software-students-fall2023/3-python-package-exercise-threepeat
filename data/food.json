@@ -3,72 +3,72 @@
         "name": "Foie gras",
         "cuisine": "French",
         "price_range": "high",
-        "type": "dinner"
+        "meal": "dinner"
     },
     {
         "name": "Chicken and Mushroom Fricassee",
         "cuisine": "French",
         "price_range": "low",
-        "type": "dinner"
+        "meal": "dinner"
     },
     {
         "name": "Marseille-Style Shrimp Stew",
         "cuisine": "French",
         "price_range": "medium",
-        "type": "dinner"
+        "meal": "dinner"
     },
     {
         "name": "Short Rib Bourguignon",
         "cuisine": "French",
         "price_range": "medium",
-        "type": "dinner"
+        "meal": "dinner"
     },
     {
         "name": "Lobster Thermidor",
         "cuisine": "French",
         "price_range": "medium",
-        "type": "dinner"
+        "meal": "dinner"
     },
     {
         "name": "Dumplings",
         "cuisine": "Chinese",
         "price_range": "low",
-        "type": "lunch"
+        "meal": "lunch"
     },
     {
         "name": "Boiled Fish With Pickled Mustard",
         "cuisine": "Chinese",
         "price_range": "high",
-        "type": "lunch"
+        "meal": "lunch"
     }, 
     {
         "name": "Stinky Mandarin Fish",
         "cuisine": "Chinese",
         "price_range": "high",
-        "type": "lunch"
+        "meal": "lunch"
     }, 
     {
         "name": "Chinese Savior Crepe",
         "cuisine": "Chinese",
         "price_range": "low",
-        "type": "breakfast"
+        "meal": "breakfast"
     }, 
     {
         "name": "Deep-fried Dough Sticks",
         "cuisine": "Chinese",
         "price_range": "low",
-        "type": "breakfast"
+        "meal": "breakfast"
     }, 
     {
         "name": "Noodles with Soy Bean Paste",
         "cuisine": "Chinese",
         "price_range": "low",
-        "type": "lunch"
+        "meal": "lunch"
     },
     {
         "name": "Sautéed Bullfrog in Chili Sauce",
         "cuisine": "Chinese",
         "price_range": "high",
-        "type": "dinner"
+        "meal": "dinner"
     }
 ]

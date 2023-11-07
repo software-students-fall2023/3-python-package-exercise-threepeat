@@ -16,7 +16,7 @@ def main():
 
     parser.add_argument("--cuisine", type=str, default="French")
     parser.add_argument("--price_range", type=str, default="medium")
-    parser.add_argument("--type", type=str, default="dinner")
+    parser.add_argument("--meal", type=str, default="dinner")
 
     args = parser.parse_args()
 
@@ -24,9 +24,9 @@ def main():
         indoor = args.indoor == "True"
         result = activity(indoor=indoor, time=args.time)
     elif args.function == "dessert":
-        result = dessert(category=args.type, price=args.price)
+        result = dessert(type=args.type, price=args.price)
     elif args.function == "food":
-        result = food(cuisine=args.cuisine, price_range=args.price_range, type=args.type)
+        result = food(cuisine=args.cuisine, price_range=args.price_range, meal=args.meal)
     
     print(result)
 
