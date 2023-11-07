@@ -2,7 +2,7 @@
 
 A little exercise to create a Python package, build it, test it, distribute it, and use it. See [instructions](./instructions.md) for details.
 
-# PyDate
+# PyDate in NYC
 An easy date generator that gives you activities, meals, desserts, and even pick up lines!
 
 ## Installation
