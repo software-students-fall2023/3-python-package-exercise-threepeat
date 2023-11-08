@@ -36,7 +36,7 @@ The pick up line function has two flags:
 1. `--text` is a boolean that specifies whether the pick up line generated should be suitable for text usage or not. Most flags with text set to true will have an emoji to accompany the pickup line. The boolean's default value is set to true.
 2. `--category` is a string that can further filter the category of the pick up line. Options for this flag are not case-sensitive, and include: `'Literary', 'Compliment', 'Sweet', 'Cute', 'Romantic', 'Classic', 'Bold', 'Direct', 'Geeky', 'Clever', 'Suggestive', 'Modern', 'Whimsical', 'Edgy', 'Humorous', 'Confident', 'Tech', 'Pun', 'Historical', 'Seasonal', 'Futuristic', 'Nerdy', 'Playful', 'Caring', 'Charming', 'Funny', 'Blessed', 'Science', 'Contemporary'`
 
-For example, `python pydate_cli.py pickupline --text=True --category=funny` will suggest a funny pickup line that is suited for texts.
+For example, `python pydate_cli.py pickupline --text True --category funny` will suggest a funny pickup line that is suited for texts.
 
 ## To import project into your own code
 You can access the date generator in your own project by importing the pydate package and using the functions _activity(indoor, time)_, _food(cuisine, price_range, meal)_, _dessert(type, price)_, _pickupline(text, category)_ to get a recommendation from the chosen category. 
