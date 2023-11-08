@@ -12,8 +12,8 @@ def main():
     parser.add_argument("--indoor", choices=["True", "False"])
     parser.add_argument("--time", type=str, default="evening")
 
-    parser.add_argument("--type", choices=["bakery", "candy", "frozen"])
-    parser.add_argument("--price", choices=["low", "medium", "high"])
+    parser.add_argument("--type", choices=["bakery", "candy", "frozen"], default="bakery")
+    parser.add_argument("--price", choices=["low", "medium", "high"], default="low")
 
     args = parser.parse_args()
 
