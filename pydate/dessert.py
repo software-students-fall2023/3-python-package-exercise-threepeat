@@ -1,12 +1,13 @@
 import json
 import random
 import os
+import pkg_resources
 
 def dessert(type, price):
-  script_dir = os.path.dirname(os.path.abspath(__file__))
-  json_path = os.path.join(script_dir, '../data/desserts.json')
+  json_path = pkg_resources.resource_filename(__name__, '../data/desserts.json')
   with open(json_path, "r") as file:
     shops = json.load(file)
+
 
   found_shops = []
   for shop in shops:
