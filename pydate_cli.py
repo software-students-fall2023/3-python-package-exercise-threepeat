@@ -2,7 +2,7 @@ import argparse
 from pydate import activity
 from pydate import food
 from pydate import dessert
-#from pydate import pickupline
+from pydate import pickupline
 
 def main():
     parser = argparse.ArgumentParser()
@@ -18,6 +18,9 @@ def main():
     parser.add_argument("--price_range", type=str, default="medium")
     parser.add_argument("--meal", type=str, default="dinner")
 
+    parser.add_argument("--text", choices=["True", "False"])
+    parser.add_argument("--category", type=str, choices=["Literary", "Compliment", "Sweet", "Cute", "Romantic", "Classic", "Bold", "Direct", "Geeky", "Clever", "Suggestive", "Modern", "Whimsical", "Edgy", "Humorous", "Confident", "Tech", "Pun", "Historical", "Seasonal", "Futuristic", "Nerdy", "Playful", "Caring", "Charming", "Funny", "Blessed", "Science", "Contemporary"])
+
     args = parser.parse_args()
 
     if args.function == "activity":
@@ -27,6 +30,10 @@ def main():
         result = dessert(type=args.type, price=args.price)
     elif args.function == "food":
         result = food(cuisine=args.cuisine, price_range=args.price_range, meal=args.meal)
+    elif args.function == "pickupline":
+        text = args.text == "False"
+        category = args.category
+        result = pickupline(text=text, category=category)
     
     print(result)
 
