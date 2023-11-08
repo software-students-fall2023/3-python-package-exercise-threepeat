@@ -3,7 +3,7 @@ import random
 import os
 import pkg_resources
 
-lines = [
+lines1 = [
     {
       "pick_up_line": "You're like my favorite book, I can't put you down.",
       "suitable_for_text": False,
@@ -161,9 +161,12 @@ def pickupline(text=False, category=None):
     if(not isinstance(text, bool)):
         return "The text flag must be a boolean. Try again."
     
-    """json_path = pkg_resources.resource_filename(__name__, 'data/pickuplines.json')
-    with open(json_path, "r") as file:
-        lines = json.load(file)"""
+    try:
+        json_path = pkg_resources.resource_filename(__name__, 'data/pickuplines.json')
+        with open(json_path, "r") as file:
+            lines = json.load(file)
+    except Exception as e:
+        lines = lines1
 
 
     filtered_lines = []
