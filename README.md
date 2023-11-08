@@ -41,6 +41,9 @@ For example, `python pydate_cli.py pickupline --text=True --category=funny` will
 ## To import project into your own code
 You can access the date generator in your own project by importing the pydate package and using the functions _activity(indoor, time)_, _food(cuisine, price_range, meal)_, _dessert(type, price)_ to get a recommendation from the chosen category. 
 
+### Example code 
+[PyDate example Interface](example.py)
+- Run Using `python example.py`
 
 ## Peer Contributions to PyDate
 Here are the steps to contribute to this package if you'd like
