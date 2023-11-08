@@ -38,3 +38,6 @@ Danica Jin - https://github.com/dj9771
 Emma Zheng - https://github.com/emxyz   
 Gabriel Park - https://github.com/gmp9469    
 Megan Chen - https://github.com/meganchen99
+
+
+![Python package build test](https://github.com/software-students-fall2023/3-python-package-exercise-threepeat/actions/workflows/workflow.yaml/badge.svg)
