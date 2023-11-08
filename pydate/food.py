@@ -4,6 +4,81 @@ import os
 import six
 import pkg_resources
 
+foods = [
+    {
+        "name": "Foie gras",
+        "cuisine": "French",
+        "price_range": "high",
+        "meal": "dinner"
+    },
+    {
+        "name": "Chicken and Mushroom Fricassee",
+        "cuisine": "French",
+        "price_range": "low",
+        "meal": "dinner"
+    },
+    {
+        "name": "Marseille-Style Shrimp Stew",
+        "cuisine": "French",
+        "price_range": "medium",
+        "meal": "dinner"
+    },
+    {
+        "name": "Short Rib Bourguignon",
+        "cuisine": "French",
+        "price_range": "medium",
+        "meal": "dinner"
+    },
+    {
+        "name": "Lobster Thermidor",
+        "cuisine": "French",
+        "price_range": "medium",
+        "meal": "dinner"
+    },
+    {
+        "name": "Dumplings",
+        "cuisine": "Chinese",
+        "price_range": "low",
+        "meal": "lunch"
+    },
+    {
+        "name": "Boiled Fish With Pickled Mustard",
+        "cuisine": "Chinese",
+        "price_range": "high",
+        "meal": "lunch"
+    }, 
+    {
+        "name": "Stinky Mandarin Fish",
+        "cuisine": "Chinese",
+        "price_range": "high",
+        "meal": "lunch"
+    }, 
+    {
+        "name": "Chinese Savior Crepe",
+        "cuisine": "Chinese",
+        "price_range": "low",
+        "meal": "breakfast"
+    }, 
+    {
+        "name": "Deep-fried Dough Sticks",
+        "cuisine": "Chinese",
+        "price_range": "low",
+        "meal": "breakfast"
+    }, 
+    {
+        "name": "Noodles with Soy Bean Paste",
+        "cuisine": "Chinese",
+        "price_range": "low",
+        "meal": "lunch"
+    },
+    {
+        "name": "Sautéed Bullfrog in Chili Sauce",
+        "cuisine": "Chinese",
+        "price_range": "high",
+        "meal": "dinner"
+    }
+]
+
 def food(cuisine="French", price_range="medium", meal="dinner"):
     if(not isinstance(cuisine, six.string_types) or not isinstance(price_range, six.string_types) or not isinstance(meal, six.string_types)):
         return "Your filter is invalid. Try again."
