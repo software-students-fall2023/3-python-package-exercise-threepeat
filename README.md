@@ -4,8 +4,7 @@
 An easy date generator that gives you activities, meals, desserts, and even pick up lines!
 
 ## Installation
-To install `pydatenyc`, run:
-```pip install pydatenyc```
+To install `pydatenyc`, use this command ```pip install pydatenyc```
 
 ## Usage
 Once installed, you can call pydate from the command line with the desired function and flags.  
