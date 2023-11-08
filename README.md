@@ -57,7 +57,7 @@ Here are the steps to contribute to this package if you'd like
 
 
 ### PyPI Link
-Click [here](https://pypi.org/project/pydatenyc/) to view pydatenyc on PyPI. 
+Click [here](https://pypi.org/project/pydatenyc/) to view `pydatenyc` on PyPI. 
 
 
 
