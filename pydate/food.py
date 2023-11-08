@@ -4,11 +4,7 @@ import os
 import six
 import pkg_resources
 
-def food(cuisine="French", price_range="medium", meal="dinner"):
-    if(not isinstance(cuisine, six.string_types) or not isinstance(price_range, six.string_types) or not isinstance(meal, six.string_types)):
-        return "Your filter is invalid. Try again."
-    
-    foods = [
+foods1 = [
     {
         "name": "Foie gras",
         "cuisine": "French",
@@ -82,6 +78,17 @@ def food(cuisine="French", price_range="medium", meal="dinner"):
         "meal": "dinner"
     }
 ]
+
+def food(cuisine="French", price_range="medium", meal="dinner"):
+    if(not isinstance(cuisine, six.string_types) or not isinstance(price_range, six.string_types) or not isinstance(meal, six.string_types)):
+        return "Your filter is invalid. Try again."
+    
+    try:
+        json_path = pkg_resources.resource_filename(__name__, 'data/food.json')
+        with open(json_path, "r") as file:
+            foods = json.load(file)
+    except Exception as e:
+        foods = foods1
 
 
     filtered_foods = []

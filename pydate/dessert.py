@@ -3,9 +3,7 @@ import random
 import os
 import pkg_resources
 
-def dessert(type, price):
-
-  shops = [
+shops1 = [
     {
       "name": "Culture: An American Yogurt Co",
       "price": "medium",
@@ -109,6 +107,14 @@ def dessert(type, price):
       "type": "candy"
     }
 ]
+
+def dessert(type="candy", price="low"):
+  try:
+    json_path = pkg_resources.resource_filename(__name__, 'data/desserts.json')
+    with open(json_path, "r") as file:
+      shops = json.load(file)
+  except Exception as e:
+    shops = shops1
 
 
   found_shops = []
