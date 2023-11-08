@@ -9,9 +9,118 @@ def activity(indoor=True, time="evening"):
     if(not isinstance(time, six.string_types) or not type(indoor)==bool):
         return "Your filter is invalid. Try again."
     
-    json_path = pkg_resources.resource_filename(__name__, 'data/activities.json')
-    with open(json_path, "r") as file:
-        activities = json.load(file)
+    activities = [
+    {
+        "activity": "Hiking",
+        "indoor": False,
+        "time": "morning"
+    },
+    {
+        "activity": "pizza dinner",
+        "indoor": True,
+        "time": "evening"
+    },
+    {
+        "activity": "sushi dinner",
+        "indoor": True,
+        "time": "evening"
+    },
+    {
+        "activity": "Star-gazing",
+        "indoor": False,
+        "time": "evening"
+    },
+    {
+        "activity": "Beach Picnic",
+        "indoor": False,
+        "time": "afternoon"
+    },
+    {
+        "activity": "Cooking Class",
+        "indoor": True,
+        "time": "evening"
+    },
+    {
+        "activity": "Art Gallery Visit",
+        "indoor": True,
+        "time": "afternoon"
+    },
+    {
+        "activity": "Movie Night",
+        "indoor": True,
+        "time": "evening"
+    },
+    {
+        "activity": "Botanical Garden Tour",
+        "indoor": False,
+        "time": "morning"
+    },
+    {
+        "activity": "Ice Skating",
+        "indoor": True,
+        "time": "evening"
+    },
+    {
+        "activity": "Wine Tasting",
+        "indoor": True,
+        "time": "evening"
+    },
+    {
+        "activity": "Zoo Visit",
+        "indoor": False,
+        "time": "afternoon"
+    },
+    {
+        "activity": "Live Music Concert",
+        "indoor": True,
+        "time": "evening"
+    },
+    {
+        "activity": "Biking in the Park",
+        "indoor": False,
+        "time": "morning"
+    },
+    {
+        "activity": "Sunset Beach Walk",
+        "indoor": False,
+        "time": "evening"
+    },
+    {
+        "activity": "Dinner and a Movie",
+        "indoor": True,
+        "time": "evening"
+    },
+    {
+        "activity": "Visit an Escape Room",
+        "indoor": True,
+        "time": "evening"
+    },
+    {
+        "activity": "Wine and Paint Night",
+        "indoor": True,
+        "time": "evening"
+    },
+    {
+        "activity": "Visit a Farmer's Market",
+        "indoor": False,
+        "time": "morning"
+    },
+    {
+        "activity": "Museum Exploration",
+        "indoor": True,
+        "time": "afternoon"
+    },
+    {
+        "activity": "Coffee and Dessert Date",
+        "indoor": True,
+        "time": "evening"
+    },
+    {
+        "activity": "Nature Hike and Picnic",
+        "indoor": False,
+        "time": "morning"
+    }
+]
 
     filtered_activities = []
     for activity in activities:
