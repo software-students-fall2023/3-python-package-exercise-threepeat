@@ -40,6 +40,7 @@ You can access the date generator in your own project by importing the pydate pa
 
 ### Example code 
 [PyDate example Interface](example.py)
+- Run Using `python example.py`
 
 ## Peer Contributions to PyDate
 Here are the steps to contribute to this package if you'd like
