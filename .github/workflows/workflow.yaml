@@ -26,5 +26,8 @@ jobs:
           python3 -m pip install --upgrade pip
           pip3 install pipenv
           pip3 install pytest
+          pipenv install --dev
+      - name: Install package in editable mode
+        run: pipenv run pip install -e .
       - name: Test with pytest
         run: pipenv run pytest
