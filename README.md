@@ -39,7 +39,7 @@ The pick up line function has two flags:
 For example, `python pydate_cli.py pickupline --text=True --category=funny` will suggest a funny pickup line that is suited for texts.
 
 ## To import project into your own code
-You can access the date generator in your own project by importing the pydate package and using the functions _activity(indoor, time)_, _food(cuisine, price_range, meal)_, _dessert(type, price)_ to get a recommendation from the chosen category. 
+You can access the date generator in your own project by importing the pydate package and using the functions _activity(indoor, time)_, _food(cuisine, price_range, meal)_, _dessert(type, price)_, _pickupline(text, category)_ to get a recommendation from the chosen category. 
 
 ### Example code 
 [PyDate example Interface](example.py)
