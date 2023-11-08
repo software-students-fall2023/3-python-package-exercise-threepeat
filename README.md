@@ -31,7 +31,7 @@ The dessert function has two flags:
 For example, `python pydate_cli.py dessert --type bakery --price medium` will suggest a moderately priced bakery as a dessert option.
 
 
-### Pick Up Line Recommendation
+### Pick Up Line Recommendation: ```pickupline(text=False, category=None)```
 The pick up line function has two flags:
 1. `--text` is a boolean that specifies whether the pick up line generated should be suitable for text usage or not. Most flags with text set to true will have an emoji to accompany the pickup line. The boolean's default value is set to true.
 2. `--category` is a string that can further filter the category of the pick up line. Options for this flag are not case-sensitive, and include: `'Literary', 'Compliment', 'Sweet', 'Cute', 'Romantic', 'Classic', 'Bold', 'Direct', 'Geeky', 'Clever', 'Suggestive', 'Modern', 'Whimsical', 'Edgy', 'Humorous', 'Confident', 'Tech', 'Pun', 'Historical', 'Seasonal', 'Futuristic', 'Nerdy', 'Playful', 'Caring', 'Charming', 'Funny', 'Blessed', 'Science', 'Contemporary'`
