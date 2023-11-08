@@ -4,7 +4,7 @@ import os
 import pkg_resources
 
 def dessert(type, price):
-  json_path = pkg_resources.resource_filename(__name__, '../data/desserts.json')
+  json_path = pkg_resources.resource_filename(__name__, 'data/desserts.json')
   with open(json_path, "r") as file:
     shops = json.load(file)
 
