@@ -21,10 +21,14 @@ The food function has three flags:
 2. `--price_range` specifies the price range of the meal. Options for this flag are `low, medium, high`.
 3. `--meal` specifies the time of day the meal will be eaten. Options for this flag are `breakfast, lunch, dinner`.
 
+For example, `python pydate_cli.py food --cuisine French --price_range expensive --meal dinner` will suggest an expensive restaurant that is open for dinner.
+
 ### Dessert Recommendation: ```dessert(type, price)```
 The dessert function has two flags:
 1. `--type` specifies the type of dessert that will be suggested. Options for this flag are `bakery, candy, frozen`.
 2. `--price` specifies the price range of the meal. Options for this flag are `low, medium, high`.
+
+For example, `python pydate_cli.py dessert --type bakery --price medium` will suggest a moderately priced bakery as a dessert option.
 
 
 ### Pick Up Line Recommendation
