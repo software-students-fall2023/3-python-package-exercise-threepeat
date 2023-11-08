@@ -9,7 +9,7 @@ def activity(indoor=True, time="evening"):
     if(not isinstance(time, six.string_types) or not type(indoor)==bool):
         return "Your filter is invalid. Try again."
     
-    json_path = pkg_resources.resource_filename(__name__, '../data/activities.json')
+    json_path = pkg_resources.resource_filename(__name__, 'data/activities.json')
     with open(json_path, "r") as file:
         activities = json.load(file)
 
