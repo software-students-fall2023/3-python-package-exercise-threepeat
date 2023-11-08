@@ -19,7 +19,7 @@ def main():
     parser.add_argument("--meal", type=str, default="dinner")
 
     parser.add_argument("--text", choices=["True", "False"])
-    parser.add_argument("--category", type=str, choices=["Literary", "Compliment", "Sweet", "Cute", "Romantic", "Classic", "Bold", "Direct", "Geeky", "Clever", "Suggestive", "Modern", "Whimsical", "Edgy", "Humorous", "Confident", "Tech", "Pun", "Historical", "Seasonal", "Futuristic", "Nerdy", "Playful", "Caring", "Charming", "Funny", "Blessed", "Science", "Contemporary"])
+    parser.add_argument("--category", type=str)
 
     args = parser.parse_args()
 
@@ -31,7 +31,7 @@ def main():
     elif args.function == "food":
         result = food(cuisine=args.cuisine, price_range=args.price_range, meal=args.meal)
     elif args.function == "pickupline":
-        text = args.text == "False"
+        text = args.text == "True"
         category = args.category
         result = pickupline(text=text, category=category)
     
