@@ -1,6 +1,4 @@
-# Python Package Exercise
-
-A little exercise to create a Python package, build it, test it, distribute it, and use it. See [instructions](./instructions.md) for details.
+![Python package build test](https://github.com/software-students-fall2023/3-python-package-exercise-threepeat/actions/workflows/workflow.yaml/badge.svg)
 
 # PyDate in NYC
 An easy date generator that gives you activities, meals, desserts, and even pick up lines!
@@ -8,17 +6,41 @@ An easy date generator that gives you activities, meals, desserts, and even pick
 ## Installation
 
 ## Usage
-Once installed, you can call pydate from the command line with the desired function and flags
+Once installed, you can call pydate from the command line with the desired function and flags.  
 
-### activity
+### Activity Recommendation: ```activity(indoor, time)```
+The activity function has two flags: 
+1. `--indoor` specifies if the suggested activity takes place indoors `-indoor True` or outdoors`-indoor False`. 
+2. `--time` specifies when the activity takes place. Options for this flag are `morning, afternoon, evening`.
+
+For example, `python pydate_cli.py activity --indoor False --time evening` will suggest an evening outdoor activity.
+
+### Food Recommendation: ```food(cuisine, price_range, meal)```
+The food function has three flags:
+1. `--cuisine` specifies the type of cuisine the recommended food will fall under.  Options for this flag are `French, Chinese, American, Italian`.
+2. `--price_range` specifies the price range of the meal. Options for this flag are `low, medium, high`.
+3. `--meal` specifies the time of day the meal will be eaten. Options for this flag are `breakfast, lunch, dinner`.
+
+For example, `python pydate_cli.py food --cuisine French --price_range medium --meal dinner` will suggest a moderately priced French meal that can be eaten for dinner.
+
+### Dessert Recommendation: ```dessert(type, price)```
+The dessert function has two flags:
+1. `--type` specifies the type of dessert that will be suggested. Options for this flag are `bakery, candy, frozen`.
+2. `--price` specifies the price range of the dessert. Options for this flag are `low, medium, high`.
+
+For example, `python pydate_cli.py dessert --type bakery --price medium` will suggest a moderately priced bakery as a dessert option.
+
+
+### Pick Up Line Recommendation
 
 
 
 ## To import project into your own code
-You can  access the jokes in your own project by importing the pydate package and using the functions _activity(indoor, time)_, _food(cuisine, price_range, meal)_, _dessert(type, price)_ to get a recommendation from the chosen category. 
+You can access the date generator in your own project by importing the pydate package and using the functions _activity(indoor, time)_, _food(cuisine, price_range, meal)_, _dessert(type, price)_ to get a recommendation from the chosen category. 
 
 
 ## Peer Contributions to PyDate
+Here are the steps to contribute to this package if you'd like
 1. Clone the repository to your local machine [https://github.com/software-students-fall2023/3-python-package-exercise-threepeat]
 2. To set up the virtual environment and dependencies:    
   a. If pipenv is not installed, run ```pip install pipenv```           
@@ -38,3 +60,4 @@ Danica Jin - https://github.com/dj9771
 Emma Zheng - https://github.com/emxyz   
 Gabriel Park - https://github.com/gmp9469    
 Megan Chen - https://github.com/meganchen99
+
