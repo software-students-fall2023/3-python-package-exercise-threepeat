@@ -1,6 +1,4 @@
-# Python Package Exercise
-
-A little exercise to create a Python package, build it, test it, distribute it, and use it. See [instructions](./instructions.md) for details.
+![Python package build test](https://github.com/software-students-fall2023/3-python-package-exercise-threepeat/actions/workflows/workflow.yaml/badge.svg)
 
 # PyDate in NYC
 An easy date generator that gives you activities, meals, desserts, and even pick up lines!
@@ -17,13 +15,13 @@ The activity function has two flags:
 
 For example, `python pydate_cli.py activity --indoor False --time evening` will suggest an evening outdoor activity.
 
-### Food Recommendation
+### Food Recommendation: ```food(cuisine, price_range, meal)```
 The food function has three flags:
-1. `--cuisine` specifies the type of cuisine the recommended food will fall under.  Options for this flag are `French, Chinese, `.
+1. `--cuisine` specifies the type of cuisine the recommended food will fall under.  Options for this flag are `French, Chinese, American, Italian`.
 2. `--price_range` specifies the price range of the meal. Options for this flag are `low, medium, high`.
 3. `--meal` specifies the time of day the meal will be eaten. Options for this flag are `breakfast, lunch, dinner`.
 
-### Dessert Recommendation
+### Dessert Recommendation: ```dessert(type, price)```
 The dessert function has two flags:
 1. `--type` specifies the type of dessert that will be suggested. Options for this flag are `bakery, candy, frozen`.
 2. `--price` specifies the price range of the meal. Options for this flag are `low, medium, high`.
@@ -59,5 +57,3 @@ Emma Zheng - https://github.com/emxyz
 Gabriel Park - https://github.com/gmp9469    
 Megan Chen - https://github.com/meganchen99
 
-
-![Python package build test](https://github.com/software-students-fall2023/3-python-package-exercise-threepeat/actions/workflows/workflow.yaml/badge.svg)
