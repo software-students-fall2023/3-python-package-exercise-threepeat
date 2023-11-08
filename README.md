@@ -4,13 +4,15 @@
 An easy date generator that gives you activities, meals, desserts, and even pick up lines!
 
 ## Installation
+To install `pydatenyc`, run:
+```pip install pydatenyc```
 
 ## Usage
 Once installed, you can call pydate from the command line with the desired function and flags.  
 
 ### Activity Recommendation: ```activity(indoor, time)```
 The activity function has two flags: 
-1. `--indoor` specifies if the suggested activity takes place indoors `-indoor True` or outdoors`-indoor False`. The indoor default is True.
+1. `--indoor` specifies if the suggested activity takes place indoors `-indoor True` or outdoors `-indoor False`. The indoor default is True.
 2. `--time` specifies when the activity takes place. Options for this flag are `morning, afternoon, evening`. The time default is evening.
 
 For example, `python pydate_cli.py activity --indoor False --time evening` will suggest an evening outdoor activity.
@@ -56,7 +58,7 @@ Here are the steps to contribute to this package if you'd like
 
 
 ### PyPI Link
-
+Click [here](https://pypi.org/project/pydatenyc/) to view pydatenyc on PyPI. 
 
 
 
