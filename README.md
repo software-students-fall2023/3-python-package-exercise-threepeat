@@ -53,7 +53,6 @@ Here are the steps to contribute to this package if you'd like
   b. Run ```pipenv install``` to install package dependencies        
   c. Run ```pipenv shell``` to activate virtual environment
 3. To run tests, run ```python3 -m pytest``` and replace _test_file_name.py_ with the test you want to run     
-4. To build package, run ```python3 -m build```
 
 
 ### PyPI Link
