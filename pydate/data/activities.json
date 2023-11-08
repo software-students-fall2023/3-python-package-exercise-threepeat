@@ -1,0 +1,112 @@
+[
+    {
+        "activity": "Hiking",
+        "indoor": false,
+        "time": "morning"
+    },
+    {
+        "activity": "pizza dinner",
+        "indoor": true,
+        "time": "evening"
+    },
+    {
+        "activity": "sushi dinner",
+        "indoor": true,
+        "time": "evening"
+    },
+    {
+        "activity": "Star-gazing",
+        "indoor": false,
+        "time": "evening"
+    },
+    {
+        "activity": "Beach Picnic",
+        "indoor": false,
+        "time": "afternoon"
+    },
+    {
+        "activity": "Cooking Class",
+        "indoor": true,
+        "time": "evening"
+    },
+    {
+        "activity": "Art Gallery Visit",
+        "indoor": true,
+        "time": "afternoon"
+    },
+    {
+        "activity": "Movie Night",
+        "indoor": true,
+        "time": "evening"
+    },
+    {
+        "activity": "Botanical Garden Tour",
+        "indoor": false,
+        "time": "morning"
+    },
+    {
+        "activity": "Ice Skating",
+        "indoor": true,
+        "time": "evening"
+    },
+    {
+        "activity": "Wine Tasting",
+        "indoor": true,
+        "time": "evening"
+    },
+    {
+        "activity": "Zoo Visit",
+        "indoor": false,
+        "time": "afternoon"
+    },
+    {
+        "activity": "Live Music Concert",
+        "indoor": true,
+        "time": "evening"
+    },
+    {
+        "activity": "Biking in the Park",
+        "indoor": false,
+        "time": "morning"
+    },
+    {
+        "activity": "Sunset Beach Walk",
+        "indoor": false,
+        "time": "evening"
+    },
+    {
+        "activity": "Dinner and a Movie",
+        "indoor": true,
+        "time": "evening"
+    },
+    {
+        "activity": "Visit an Escape Room",
+        "indoor": true,
+        "time": "evening"
+    },
+    {
+        "activity": "Wine and Paint Night",
+        "indoor": true,
+        "time": "evening"
+    },
+    {
+        "activity": "Visit a Farmer's Market",
+        "indoor": false,
+        "time": "morning"
+    },
+    {
+        "activity": "Museum Exploration",
+        "indoor": true,
+        "time": "afternoon"
+    },
+    {
+        "activity": "Coffee and Dessert Date",
+        "indoor": true,
+        "time": "evening"
+    },
+    {
+        "activity": "Nature Hike and Picnic",
+        "indoor": false,
+        "time": "morning"
+    }
+]
