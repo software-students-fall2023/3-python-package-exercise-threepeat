@@ -8,6 +8,7 @@ pytest = "*"
 build = "*"
 twine = "*"
 six = "*"
+exceptiongroup = "*"
 
 [dev-packages]
 
