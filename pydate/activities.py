@@ -4,12 +4,7 @@ import os
 import six
 import pkg_resources
 
-
-def activity(indoor=True, time="evening"):
-    if(not isinstance(time, six.string_types) or not type(indoor)==bool):
-        return "Your filter is invalid. Try again."
-    
-    activities = [
+activities = [
     {
         "activity": "Hiking",
         "indoor": False,
@@ -121,6 +116,10 @@ def activity(indoor=True, time="evening"):
         "time": "morning"
     }
 ]
+
+def activity(indoor=True, time="evening"):
+    if(not isinstance(time, six.string_types) or not type(indoor)==bool):
+        return "Your filter is invalid. Try again."
 
     filtered_activities = []
     for activity in activities:

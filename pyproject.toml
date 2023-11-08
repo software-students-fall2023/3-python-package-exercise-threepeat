@@ -1,6 +1,6 @@
 [project]
 name = "pydatenyc"
-version = "0.1.0"
+version = "0.1.4"
 description = "A CLI tool to recommend date ideas in NYC from activity, to a meal, to dessert based on user preferences, and can even recommend a pick up line for you!"
 license = {file = "LICENSE"}
 readme = "README.md"
