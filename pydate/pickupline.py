@@ -1,15 +1,16 @@
 import json
 import random
 import os
+import pkg_resources
 
 def pickupline(text=False, category=None):
     if(not isinstance(text, bool)):
         return "The text flag must be a boolean. Try again."
     
-    script_dir = os.path.dirname(os.path.abspath(__file__))
-    json_path = os.path.join(script_dir, '../data/pickuplines.json')
+    json_path = pkg_resources.resource_filename(__name__, '../data/pickuplines.json')
     with open(json_path, "r") as file:
         lines = json.load(file)
+
 
     filtered_lines = []
     for line in lines:  
